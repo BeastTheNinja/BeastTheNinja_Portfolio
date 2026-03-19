@@ -12,11 +12,11 @@ const Home = () => {
       <Section>
         <div className="grid items-center gap-8 md:grid-cols-[1fr_220px]">
           <div>
-            <p className="text-sm font-medium text-zinc-500">Hej, jeg er Sebastian Larsen</p>
-            <h1 className="mt-2 text-4xl font-semibold tracking-tight text-zinc-900">
+            <p className="text-sm font-medium text-slate-300">Hej, jeg er Sebastian Larsen</p>
+            <h1 className="mt-2 text-4xl font-semibold tracking-tight text-slate-100">
               Studerende Frontend Developer
             </h1>
-            <p className="mt-4 max-w-2xl text-zinc-700">
+            <p className="mt-4 max-w-2xl text-slate-200">
               Jeg bygger moderne og brugervenlige weboplevelser med React, Vite, og er lige begyndt at arbejde med Next.js og TypeScript.
             </p>
             <div className="mt-6 flex gap-3">
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+          <div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-800/70 shadow-sm shadow-black/30">
             <Image src="/Sebastian.jpg" alt="Sebastian Larsen profilbillede" width={220} height={260} className="h-auto w-full object-cover" />
           </div>
         </div>

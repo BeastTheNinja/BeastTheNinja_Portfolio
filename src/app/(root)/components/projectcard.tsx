@@ -21,12 +21,12 @@ export const ProjectCard = ({
     return (
         <article
             className={[
-                "rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm",
-                featured ? "ring-1 ring-zinc-300" : "",
+                "rounded-2xl border border-slate-700 bg-slate-800/70 p-5 shadow-sm shadow-black/30",
+                featured ? "ring-1 ring-indigo-400/50" : "",
             ].join(" ")}
         >
-            <h3 className="text-lg font-semibold tracking-tight">{name}</h3>
-            <p className="mt-2 text-sm text-zinc-600">{summary}</p>
+            <h3 className="text-lg font-semibold tracking-tight text-slate-100">{name}</h3>
+            <p className="mt-2 text-sm text-slate-200">{summary}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
                 {stack.map((item) => (

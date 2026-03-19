@@ -19,8 +19,8 @@ export const NavLink = ({ href, label }: NavLinkProps) => {
             className={[
                 "inline-flex rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
                 isActive
-                    ? "bg-zinc-900 text-white"
-                    : "text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900",
+                    ? "bg-indigo-500 text-white"
+                    : "text-slate-200 hover:bg-slate-700 hover:text-white",
             ].join(" ")}
         >
             {label}

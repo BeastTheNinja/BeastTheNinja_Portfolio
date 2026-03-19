@@ -17,7 +17,7 @@ export const SocialLinks = ({ links, className = "" }: SocialLinksProps) => {
                     href={link.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-sm text-zinc-600 transition-colors hover:text-zinc-900"
+                    className="text-sm text-slate-300 transition-colors hover:text-indigo-300"
                 >
                     {link.label}
                 </a>

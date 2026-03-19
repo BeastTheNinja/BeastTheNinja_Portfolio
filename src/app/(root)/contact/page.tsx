@@ -2,6 +2,7 @@ import { PageIntro } from "../components/pageintro";
 import { ButtonLink } from "../components/buttonlink";
 import { contactEmail, contactLinks, contactPhone } from "../data/site-data";
 import { SocialLinks } from "../components/sociallinks";
+import { Section } from "../components/section";
 
 const ContactPage = () => {
     return (
@@ -17,7 +18,12 @@ const ContactPage = () => {
                     </>
                 }
             />
-           <SocialLinks links={contactLinks} />
+            <Section>
+                <div className="rounded-2xl border border-slate-700 bg-slate-800/70 p-5 shadow-sm shadow-black/30">
+                    <p className="mb-3 text-sm text-slate-200">Find mig også her:</p>
+                    <SocialLinks links={contactLinks} />
+                </div>
+            </Section>
         </>
     );
 };

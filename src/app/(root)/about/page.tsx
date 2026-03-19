@@ -26,7 +26,7 @@ const AboutPage = () => {
 
             <Section title="Min profil">
                 <div className="grid gap-8 md:grid-cols-[220px_1fr] md:items-start">
-                    <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+                    <div className="overflow-hidden rounded-2xl border border-slate-700 bg-slate-800/70 shadow-sm shadow-black/30">
                         <Image
                             src="/Sebastian.jpg"
                             alt={`${profile.name} profilbillede`}
@@ -39,20 +39,20 @@ const AboutPage = () => {
 
                     <div className="space-y-4">
                         {profile.bio.map((text) => (
-                            <p key={text} className="text-zinc-700">
+                            <p key={text} className="text-slate-200">
                                 {text}
                             </p>
                         ))}
 
                         <div>
-                            <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-zinc-500">
+                            <h3 className="mb-2 text-sm font-semibold uppercase tracking-wide text-slate-300">
                                 Skills
                             </h3>
                             <div className="flex flex-wrap gap-2">
                                 {profile.skills.map((skill) => (
                                     <span
                                         key={skill}
-                                        className="inline-flex rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-700"
+                                        className="inline-flex rounded-full border border-slate-600 bg-slate-700 px-3 py-1 text-xs font-medium text-slate-100"
                                     >
                                         {skill}
                                     </span>
