@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BeastTheNinja Portfolio
 
-## Getting Started
+Moderne portfolio bygget med Next.js App Router, TypeScript og Tailwind CSS.
 
-First, run the development server:
+## Kort om projektet
+
+Dette er min personlige portfolio, hvor jeg præsenterer:
+
+- hvem jeg er som udvikler
+- udvalgte projekter
+- kontaktmuligheder
+
+Målet med projektet er at kombinere et clean, moderne UI med en enkel og skalerbar kodebase baseret på genbrugelige komponenter.
+
+## Højdepunkter
+
+- Genbrugelig komponentstruktur (`Header`, `Nav`, `Section`, `PageIntro`, `ProjectCard`, `Footer`)
+- Datadrevet indhold via `site-data.ts`
+- Tydelig sideopdeling med App Router route groups
+- Fokus på vedligeholdbar frontend-arkitektur og konsistent design
+
+## Tech stack
+
+- Next.js 16
+- React 19
+- TypeScript 5
+- Tailwind CSS 4
+- ESLint 9
+
+## Sider
+
+- `/` Forside med intro + featured projekter
+- `/projects` Oversigt over projekter
+- `/about` Profil, skills og personlig introduktion
+- `/contact` Kontakt-CTA og sociale links
+
+## Projektstruktur (kort)
+
+- `src/app/(root)/` Offentlige portfolio-sider
+- `src/app/(root)/components/` Genbrugelige UI-komponenter
+- `src/app/(root)/data/site-data.ts` Central data (projekter + kontaktlinks)
+- `src/app/layout.tsx` Global metadata og root layout
+
+## Hvad jeg lærte i projektet
+
+- Strukturere en portfolio med Next.js App Router og route groups
+- Bygge reusable UI-komponenter med tydelige props
+- Flytte indhold til central datafil for bedre vedligeholdelse
+- Arbejde med aktiv navigation og konsistent layout på tværs af sider
+- Forbedre tekst og præsentation, så siden kommunikerer mere professionelt
+
+## Kom i gang
+
+Installer dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Åbn derefter `http://localhost:3000` i browseren.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev    # Start development server
+npm run build  # Production build
+npm run start  # Start production server
+npm run lint   # Kør ESLint
+```
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Anbefalet deployment: Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push projektet til GitHub
+2. Importér repo i Vercel
+3. Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lavet af Sebastian Larsen.
