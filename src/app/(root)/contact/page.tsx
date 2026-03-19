@@ -19,7 +19,7 @@ const ContactPage = () => {
                 }
             />
             <Section>
-                <div className="rounded-2xl border border-slate-700 bg-slate-800/70 p-5 shadow-sm shadow-black/30">
+                <div className="rounded-2xl border border-slate-700 bg-slate-800/70 p-4 shadow-sm shadow-black/30 sm:p-5">
                     <p className="mb-3 text-sm text-slate-200">Find mig også her:</p>
                     <SocialLinks links={contactLinks} />
                 </div>

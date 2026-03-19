@@ -17,7 +17,7 @@ export const NavLink = ({ href, label }: NavLinkProps) => {
             href={href}
             aria-current={isActive ? "page" : undefined}
             className={[
-                "inline-flex rounded-full px-3 py-1.5 text-sm font-medium transition-colors",
+                "inline-flex rounded-full px-3 py-1.5 text-xs font-medium transition-colors sm:text-sm",
                 isActive
                     ? "bg-indigo-500 text-white"
                     : "text-slate-200 hover:bg-slate-700 hover:text-white",

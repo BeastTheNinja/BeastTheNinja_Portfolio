@@ -8,7 +8,7 @@ type ButtonLinkProps = {
 };
 
 export const ButtonLink = ({ href, children, variant = "primary" }: ButtonLinkProps) => {
-    const base = "inline-flex items-center rounded-full px-4 py-2 text-sm font-medium transition-colors";
+    const base = "inline-flex items-center rounded-full px-3.5 py-2 text-sm font-medium transition-colors sm:px-4";
     const style =
         variant === "primary"
             ? "bg-indigo-500 text-white hover:bg-indigo-400"

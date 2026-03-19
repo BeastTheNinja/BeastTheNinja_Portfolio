@@ -21,7 +21,7 @@ export const ProjectCard = ({
     return (
         <article
             className={[
-                "rounded-2xl border border-slate-700 bg-slate-800/70 p-5 shadow-sm shadow-black/30",
+                "rounded-2xl border border-slate-700 bg-slate-800/70 p-4 shadow-sm shadow-black/30 sm:p-5",
                 featured ? "ring-1 ring-indigo-400/50" : "",
             ].join(" ")}
         >
@@ -34,7 +34,7 @@ export const ProjectCard = ({
                 ))}
             </div>
 
-            <div className="mt-5 flex gap-2">
+            <div className="mt-5 flex flex-wrap gap-2">
                 {demoUrl ? <ButtonLink href={demoUrl}>Live</ButtonLink> : null}
                 {repoUrl ? (
                     <ButtonLink href={repoUrl} variant="secondary">
