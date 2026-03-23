@@ -51,7 +51,8 @@ export const projects: Project[] = [
 ];
 
 export const contactLinks = [
-    { label: "GitHub", href: "https://github.com/BeastTheNinja" },
+    { label: "GitHub", href: "https://github.com/BeastTheNinja", icon: "github" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/sebastian-larsen-3514343b9", icon: "linkedin" }, 
 ];
 
 export const contactEmail = "mailto:sebastianlarsen21@outlook.com";
