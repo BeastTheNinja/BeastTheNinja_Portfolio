@@ -2,12 +2,13 @@ import { Header } from "./components/header";
 import { Footer } from "./components/footer";
 import { contactLinks } from "./data/site-data";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next"
 
 const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Hjem" },
+    { href: "/projekter", label: "Projekter" },
+    { href: "/om", label: "Om" },
+    { href: "/kontakt", label: "Kontakt" },
 ];
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -20,6 +21,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             />
             <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10">{children}</main>
             <Footer name="BeastTheNinja" links={contactLinks} />
+            
+            <Analytics />
             <SpeedInsights />
         </div>
     );
