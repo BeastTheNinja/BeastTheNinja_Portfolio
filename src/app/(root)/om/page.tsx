@@ -62,7 +62,7 @@ const AboutPage = () => {
                         </div>
 
                         <div className="pt-2">
-                            <ButtonLink href="/contact">Kontakt mig</ButtonLink>
+                            <ButtonLink href="/kontakt">Kontakt mig</ButtonLink>
                         </div>
                     </div>
                 </div>

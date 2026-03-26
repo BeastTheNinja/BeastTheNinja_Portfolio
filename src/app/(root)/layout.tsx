@@ -19,9 +19,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 description="Sebastian Larsen"
                 navItems={navItems}
             />
-            <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10">{children}</main>
+            <main id="main-content" className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 sm:px-6 sm:py-10">{children}</main>
             <Footer name="BeastTheNinja" links={contactLinks} />
-            
+
             <Analytics />
             <SpeedInsights />
         </div>

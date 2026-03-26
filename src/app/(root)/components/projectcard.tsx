@@ -35,9 +35,22 @@ export const ProjectCard = ({
             </div>
 
             <div className="mt-5 flex flex-wrap gap-2">
-                {demoUrl ? <ButtonLink href={demoUrl}>Live</ButtonLink> : null}
+                {demoUrl ? (
+                    <ButtonLink
+                        href={demoUrl}
+                        external
+                        ariaLabel={`Se live demo af ${name} (åbner i ny fane)`}
+                    >
+                        Live
+                    </ButtonLink>
+                ) : null}
                 {repoUrl ? (
-                    <ButtonLink href={repoUrl} variant="secondary">
+                    <ButtonLink
+                        href={repoUrl}
+                        variant="secondary"
+                        external
+                        ariaLabel={`Se kildekode for ${name} (åbner i ny fane)`}
+                    >
                         Code
                     </ButtonLink>
                 ) : null}

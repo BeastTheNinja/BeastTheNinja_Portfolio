@@ -16,10 +16,12 @@ export const SocialLinks = ({ links, className = "" }: SocialLinksProps) => {
                     key={link.href}
                     href={link.href}
                     target="_blank"
-                    rel="noreferrer"
-                    className="text-sm text-slate-300 transition-colors hover:text-indigo-300"
+                    rel="noopener noreferrer"
+                    aria-label={`${link.label} (åbner i ny fane)`}
+                    className="text-sm text-slate-300 transition-colors hover:text-indigo-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 rounded"
                 >
                     {link.label}
+                    <span className="sr-only"> (åbner i ny fane)</span>
                 </a>
             ))}
         </div>
