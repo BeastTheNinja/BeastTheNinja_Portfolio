@@ -20,8 +20,8 @@ const Home = () => {
               Jeg bygger moderne og brugervenlige weboplevelser med React, Vite, og er lige begyndt at arbejde med Next.js og TypeScript.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <ButtonLink href="/projects">Se projekter</ButtonLink>
-              <ButtonLink href="/contact" variant="secondary">Kontakt mig</ButtonLink>
+              <ButtonLink href="/projekter">Se projekter</ButtonLink>
+              <ButtonLink href="/kontakt" variant="secondary">Kontakt mig</ButtonLink>
             </div>
           </div>
 
