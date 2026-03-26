@@ -4,6 +4,7 @@ import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
 });
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
