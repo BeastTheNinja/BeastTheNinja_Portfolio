@@ -9,12 +9,18 @@ type SocialLinksProps = {
 };
 
 export const SocialLinks = ({ links, className = "" }: SocialLinksProps) => {
+    const isSafeHref = (value: string) =>
+        value.startsWith("/") ||
+        /^https?:\/\//i.test(value) ||
+        /^mailto:/i.test(value) ||
+        /^tel:/i.test(value);
+
     return (
         <div className={`flex flex-wrap items-center gap-3 ${className}`}>
             {links.map((link) => (
                 <a
                     key={link.href}
-                    href={link.href}
+                    href={isSafeHref(link.href) ? link.href : "#"}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={`${link.label} (åbner i ny fane)`}

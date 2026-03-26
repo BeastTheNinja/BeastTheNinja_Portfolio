@@ -23,9 +23,18 @@ export const ButtonLink = ({
             ? "bg-indigo-500 text-white hover:bg-indigo-400"
             : "border border-cyan-400/40 text-cyan-200 hover:bg-cyan-500/10";
 
+    const isSafeHref = (value: string) =>
+        value.startsWith("/") ||
+        value.startsWith("#") ||
+        /^https?:\/\//i.test(value) ||
+        /^mailto:/i.test(value) ||
+        /^tel:/i.test(value);
+
+    const safeHref = isSafeHref(href) ? href : "#";
+
     if (external) {
         return (
-            <a href={href} target="_blank" rel="noopener noreferrer" className={`${base} ${style}`} aria-label={ariaLabel}>
+            <a href={safeHref} target="_blank" rel="noopener noreferrer" className={`${base} ${style}`} aria-label={ariaLabel}>
                 {children}
                 <span className="sr-only"> (åbner i ny fane)</span>
             </a>
@@ -33,7 +42,7 @@ export const ButtonLink = ({
     }
 
     return (
-        <Link href={href} className={`${base} ${style}`} aria-label={ariaLabel}>
+        <Link href={safeHref} className={`${base} ${style}`} aria-label={ariaLabel}>
             {children}
         </Link>
     );
