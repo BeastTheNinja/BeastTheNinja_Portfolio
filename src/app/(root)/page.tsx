@@ -5,7 +5,7 @@ import { ProjectCard } from "./components/projectcard";
 import { projects } from "./data/site-data";
 
 const Home = () => {
-  const featuredProjects = projects.filter((project) => project.featured).slice(0, 2);
+  const featuredProjects = projects.filter((project) => project.featured).slice(0, 4);
 
   return (
     <>
@@ -26,7 +26,7 @@ const Home = () => {
           </div>
 
           <div className="mx-auto w-full max-w-55 overflow-hidden rounded-2xl border border-slate-700 bg-slate-800/70 shadow-sm shadow-black/30 md:mx-0">
-            <Image src="/Sebastian.jpg" alt="Sebastian Larsen profilbillede" width={220} height={260} className="h-auto w-full object-cover" loading="eager" />
+            <Image src="/mig3.jpg" alt="Sebastian Larsen profilbillede" width={220} height={260} className="h-auto w-full object-cover" loading="eager" />
           </div>
         </div>
       </Section>

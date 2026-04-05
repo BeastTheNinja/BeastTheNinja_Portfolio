@@ -28,7 +28,7 @@ const AboutPage = () => {
                 <div className="grid gap-6 sm:gap-8 md:grid-cols-[220px_1fr] md:items-start">
                     <div className="mx-auto w-full max-w-55 overflow-hidden rounded-2xl border border-slate-700 bg-slate-800/70 shadow-sm shadow-black/30 md:mx-0">
                         <Image
-                            src="/Sebastian.jpg"
+                            src="/mig6.jpg"
                             alt={`${profile.name} profilbillede`}
                             width={220}
                             height={260}

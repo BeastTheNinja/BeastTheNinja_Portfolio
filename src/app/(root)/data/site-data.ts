@@ -9,6 +9,14 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        name: "PhotographWebsite",
+        summary: "En privat projekt med at udvikle en fotograf hjemmeside, hvor jeg har brugt next.js, nodemailer, supabase og drizzle orm. Projektet er stadig under udvikling, men jeg har allerede implementeret en kontaktformular, hvor brugere kan sende beskeder til fotografen.",
+        stack: ["React", "TypeScript", "Tailwind CSS", "next.js", "nodemailer", "supabase", "Drizzle ORM", "WIP"],
+        demoUrl: "https://www.dinfotografannika.dk/",
+        repoUrl: "https://github.com/BeastTheNinja/photographwebsite",
+        featured: true,
+    },
+    {
         name: "SustainableIsland2026",
         summary: "To ugers projekt med island og spanien, hvor vi skulle lave en app for noget global goals relateret. sponsorert af Erasmus+",
         stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "docker", "prismadb", "postgreSQL"],
